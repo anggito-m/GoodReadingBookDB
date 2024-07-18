@@ -1,6 +1,97 @@
 SELECT * FROM public.country
 ORDER BY country_id ASC 
 
+/*
+    This SQL code section is located in the file "sqlGRB.sql".
+    It is used to perform certain operations related to the "Coolyeah" database.
+    Please refer to the file for more details on the specific operations being performed.
+*/
+-- 
+insert into public."writer" (writer_id, first_name, last_name) values (1, 'Celisse', 'Canet');
+,(2, 'Elisha', 'Kennewell')
+,(3, 'Didi', 'Driussi')
+,(4, 'Kelsey', 'Johananov')
+,(5, 'Heindrick', 'McKoy')
+,(6, 'Errol', 'Streat')
+,(7, 'Aldus', 'Rulten')
+,(8, 'Domenico', 'Sedgmond')
+,(9, 'Agna', 'Shovelbottom')
+,(10, 'Templeton', 'Ellis')
+,(11, 'Kristos', 'Tyres'),(12, 'Thorpe', 'Soreau')
+,(13, 'Adi', 'Bowshire')
+,(14, 'Robert', 'Warmisham')
+,(15, 'Natka', 'Howsego')
+,(16, 'Kay', 'Jugging')
+,(17, 'Tome', 'Knappett')
+,(18, 'Art', 'Greenwell'),(19, 'Antonius', 'Valiant')
+,(20, 'Laurence', 'Crighten');
+
+insert into language (language_id, name) values (1, 'Irish Gaelic')
+ ,(2, 'Marathi')
+ ,(3, 'Telugu')
+ ,(4, 'Kashmiri')
+ ,(5, 'Gujarati')
+ ,(6, 'Gujarati')
+ ,(7, 'Māori')
+ ,(8, 'Tok Pisin')
+ ,(9, 'New Zealand Sign Language')
+ ,(10, 'Bislama')
+ ,(11, 'Danish')
+ ,(12, 'Dhivehi')
+ ,(13, 'Nepali')
+ ,(14, 'Estonian')
+ ,(15, 'Tswana')
+ ,(16, 'Croatian')
+ ,(17, 'Haitian Creole')
+ ,(18, 'Maltese')
+ ,(19, 'Macedonian')
+ ,(20, 'Swati');
+
+insert into book_writer (writer_id, book_id) values (5, 1)
+,(10, 2)
+,(8, 3)
+,(11, 4)
+,(14, 5)
+,(2, 6)
+,(3, 7)
+,(6, 8)
+,(15, 9)
+,(10, 10)
+,(5, 11)
+,(10, 12)
+,(3, 13)
+,(10, 14)
+,(10, 15)
+,(14, 16)
+,(20, 17)
+,(12, 18)
+,(5, 19)
+,(16, 20);
+
+insert into book (book_id, title, description, release_year, language_id, original_language_id, price, last_update, special_features, fulltext) values (1, 'Midnight Moon', null, 2002, 6, null, 172480, '16/05/2024', null, 'consectetur adipiscing elit.')
+, (2, 'Sapphire Skies', null, 1998, 7, null, 85573, '23/04/2024', null, 'Lorem ipsum dolor sit amet')
+, (3, 'Golden Horizon', null, 1998, 7, null, 183151, '15/08/2023', null, 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.')
+, (4, 'Crimson Cascade', 'quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 2003, 2, null, 113115, '12/05/2024', null, 'Excepteur sint occaecat cupidatat non proident')
+, (5, 'Violet Veil', 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 1998, 5, null, 184587, '13/10/2023', null, 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.')
+, (6, 'Whimsical Wonderland', 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 2005, 3, null, 81504, '09/06/2023', null, 'Ut enim ad minim veniam')
+, (7, 'Crimson Cascade', null, 2007, 3, null, 177524, '13/04/2024', null, 'consectetur adipiscing elit.')
+, (8, 'Ocean''s Embrace', 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 2007, 10, null, 124727, '06/05/2024', null, 'Ut enim ad minim veniam')
+, (9, 'Violet Veil', null, 2011, 3, null, 140929, '16/04/2024', null, 'Lorem ipsum dolor sit amet')
+, (10, 'Whispers in the Wind', null, 1998, 6, null, 64420, '22/02/2024', null, 'consectetur adipiscing elit.')
+, (11, 'Crimson Cascade', null, 1994, 4, null, 98615, '15/08/2023', null, 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+, (12, 'The Secret Garden', 'sunt in culpa qui officia deserunt mollit anim id est laborum.', 2009, 10, null, 12713, '04/05/2023', null, 'consectetur adipiscing elit.')
+, (13, 'Dancing Shadows', 'sunt in culpa qui officia deserunt mollit anim id est laborum.', 2007, 2, null, 61000, '30/08/2023', null, 'Lorem ipsum dolor sit amet')
+, (14, 'Silver Lining', 'consectetur adipiscing elit.', 2009, 4, null, 59377, '29/05/2024', null, 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.')
+, (15, 'Amber Aura', 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 2006, 3, null, 76155, '30/03/2024', null, 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+, (16, 'Silver Lining', null, 2010, 5, null, 108242, '29/11/2023', null, 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.')
+, (17, 'Golden Horizon', 'Excepteur sint occaecat cupidatat non proident', 2009, 10, null, 103367, '18/03/2024', null, 'Lorem ipsum dolor sit amet')
+, (18, 'Midnight Moon', null, 2005, 5, null, 140065, '03/02/2024', null, 'sunt in culpa qui officia deserunt mollit anim id est laborum.')
+, (19, 'Mystic Dreams', 'Excepteur sint occaecat cupidatat non proident', 1995, 2, 4, 194861, '13/07/2023', null, 'consectetur adipiscing elit.')
+, (20, 'Crimson Cascade', null, 2005, 2, null, 128303, '18/11/2023', null, 'Ut enim ad minim veniam');
+
+
+
+
 -- insert into country (country_id, country) values (1, 'Indonesia');
 insert into country (country_id, country) values (2, 'United States');
 insert into country (country_id, country) values (3, 'Peru');
